@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Intro jQuery</title>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+	</head>
+	
+	<body>
+		<h3>Todo list</h3>
+		
+		<ul id="toDoList">
+			<li>Une première tache</li>
+		</ul>
+		
+		<input type="text" id="taskToAdd" />
+		<button id="addTask">Ajouter</button>
+	</body>
+	
+	<script>
+		$("#addTask").click(function(event) {
+			event.preventDefault();
+			$("#toDoList").append("<li>" + $("#taskToAdd").val() + "</li>");
+		});
+		
+		$("ul").on("click", "li", function() {
+			$(this).remove();
+		});
+	</script>
+</html>
