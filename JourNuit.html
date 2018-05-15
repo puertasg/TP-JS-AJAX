@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Intro jQuery</title>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+	</head>
+	
+	<body>
+		<ul>
+			<li id="liTu">Tu...</li>
+			<li id="liMe">me</li>
+			<li id="liVois">vois ?</li>
+		</ul>
+		
+		<button id="buttonJour">Jour !</button>
+		<button id="buttonNuit">Nuit !</button>
+	</body>
+	
+	<script>
+		$("#buttonJour").click(function() {
+			$("#liTu ~ li").hide();
+		});
+		
+		$("#buttonNuit").click(function() {
+			$("#liTu ~ li").show();
+		});
+	</script>
+</html>
