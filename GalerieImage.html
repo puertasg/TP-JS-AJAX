@@ -3,11 +3,37 @@
 	<head>
 		<title>Intro jQuery</title>
 		<script src="./js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="./css/style_galerie.css">
 	</head>
 	
 	<body>
+		<div class="container">
+			<img src="./images/butterfly_flower_01_hd_pictures_166973.jpg" class="thumbnail" />
+		</div>
+		
+		<div class="container">
+			<img src="./images/dahlia-red-blossom-bloom-60597.jpeg" class="thumbnail" />
+		</div>
+		
+		<div class="container">
+			<img src="./images/index.jpg" class="thumbnail" />
+		</div>
+		
+		<br/>
+		
+		<div class="container">
+			<img src="" id="imgFull"/>
+		</div>
 	</body>
 	
 	<script>
+		$("img").click(function() {
+			$("#imgFull").fadeOut(100);
+			
+			var src = $(this).attr("src");
+			$("#imgFull").attr("src", src);
+			
+			$("#imgFull").fadeIn(400);
+		});
 	</script>
 </html>
