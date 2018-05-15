@@ -1,14 +1,19 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Intro jQuery</title>
-		<script src="./js/jquery-3.3.1.min.js"></script>
+		<title>Intro AJAX</title>
+		<script src="./js/ajax.js"></script>
 	</head>
 	
-	<body>
+	<body onload="loading()">
+		<button id="btnListUser">Lister les utilisateurs</button><br/>
+		
+		<form id="formUser">
+			<input type="text" id="inputNom" />
+			<input type="password" id="inputPassword" />
+			<input type="button" id="btnAddUser" value="Envoyer" />
+		</form>
+		
+		<button id="btnListHobbies">Lister les hobbies</button>
 	</body>
-	
-	<script>
-	</script>
 </html>
-https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?
