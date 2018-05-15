@@ -23,7 +23,7 @@ function addTask()
 function loading()
 {
 	button = document.getElementById("addtodo");
-	button.addEventListener('click', function(event) {
+	button.addEventListener('click', function() {
 		addTask();
 	});
 }
