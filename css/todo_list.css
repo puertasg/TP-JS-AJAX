@@ -1,36 +1,59 @@
-.content {
-color: white;
-background: #223c55;
-padding: 1em;
-text-align: center;
-width: 30%;
-margin: auto;
-font-family: Helvetica, Arial
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
 }
-.content > ul {
-color: black;
-list-style: none;
-width: 50%;
-margin: 1em auto;
-padding: 0.3em;
+
+h1, ul
+{
+    margin-bottom: 40px;
 }
-.content > ul > li {
-background-color: white;
-margin: 0.5em;
-width: 100%;
-text-align: center;
-padding: 10px;
--webkit-border-radius : 5px;
--moz-border-radius : 5px;
-border-radius : 5px;
+
+h1
+{
+    color:white;
 }
-#todotxt {
--webkit-border-radius : 3px;
--moz-border-radius : 3px;
-border-radius : 3px;
+
+ul
+{
+    padding: 0;
 }
-button {
--webkit-border-radius : 8px;
--moz-border-radius : 8px;
-border-radius : 8px;
+
+.content, li
+{
+    text-align: center;
+}
+
+li
+{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.content
+{
+    margin:auto;
+    padding:0px 20px 10px 20px;
+    width:25%;
+    background-color:#000099;
+}
+
+#todotxt
+{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    border-color: black;
+}
+
+#addtodo
+{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
